@@ -7,34 +7,32 @@
 #include <stdbool.h>
 #include<locale.h>
 #include<ctype.h>
-//----------------------INICIO ESTRUTURAS ---------------------
-//----------------------ESTRUTURA MAQUINA ---------------------
+
+
 typedef struct maquina
 {
-    int maquinaNum; //
-    int maquinaTempo;//
-    struct maquina *Seguinte;//
-    struct maquina *Anterior;//
-} maquina;//
-//----------------------ESTRUTURA OPERACAO ---------------------
+    int maquinaNum;
+    int maquinaTempo;
+    struct maquina *Seguinte;
+    struct maquina *Anterior;
+} maquina;
 
-typedef struct operacao//
+typedef struct operacao
 {
-    int operacaoNum;//
-    int jobNum;//
-    struct maquina *MaquinaHead;//
-    struct operacao *Seguinte;//
-    struct operacao *Anterior;//
-} operacao;//
-//----------------------ESTRUTURA JOB ---------------------
+    int operacaoNum;
+    int jobNum;
+    struct maquina *MaquinaHead;
+    struct operacao *Seguinte;
+    struct operacao *Anterior;
+} operacao;
+
 typedef struct job
 {
-    int jobis;//
-    int jobNum;//
-    struct operacao *OperacaoHead;//
-    struct job *Seguinte;//
+    int jobis;
+    int jobNum;
+    struct operacao *OperacaoHead;
+    struct job *Seguinte;
 } job;
-//----------------------FIM ESTRUTURAS---------------------
 
 int Dado();
 
