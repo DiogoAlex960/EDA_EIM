@@ -2,7 +2,7 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6" />
 	<Project>
-		<Option title="EDA_TP2_DS_EIM" />
+		<Option title="EDA_TP_DS_EIM" />
 		<Option pch_mode="2" />
 		<Option compiler="gcc" />
 		<Build>
