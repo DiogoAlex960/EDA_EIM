@@ -367,10 +367,10 @@ void AlterarOperacao(job *HeadJob)
     int Valor;
 
     printf("\t--- Alterar Operacao  ---\n"
-           "\t Enter 1 - Adicionar Maquina\n"
-           "\t Enter 2 - Remover Maquina  \n"
-           "\t Enter 3 - Troca(exchange) Ordem de Operacao  \n"
-           "\n\t Enter 0 - back\n");
+           "\t  1 - Adicionar Maquina\n"
+           "\t  2 - Remover Maquina  \n"
+           "\t  3 - Troca(exchange) Ordem de Operacao  \n"
+           "\n\t  0 - Voltar\n");
 
     Valor = Dado(0, 5);
     switch (Valor)

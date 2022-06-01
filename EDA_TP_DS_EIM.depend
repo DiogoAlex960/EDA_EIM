@@ -1,5 +1,5 @@
 # depslib dependency file v1.0
-1654115353 source:c:\users\diogo\onedrive\documents\github\eda_eim\funcoes.c
+1654123879 source:c:\users\diogo\onedrive\documents\github\eda_eim\funcoes.c
 	<stdio.h>
 	<stdlib.h>
 	"Estrutura.h"
