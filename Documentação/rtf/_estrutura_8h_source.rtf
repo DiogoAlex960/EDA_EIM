@@ -108,8 +108,8 @@
 {\comment begin body}
 \pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
 Estrutura.h\par \pard\plain 
-{\tc\tcl2 \v EDA_TP2_DS/Estrutura.h}
-{\xe \v EDA_TP2_DS/Estrutura.h}
+{\tc\tcl2 \v C:/Users/diogo/OneDrive/Documents/GitHub/EDA_EIM/Estrutura.h}
+{\xe \v C:/Users/diogo/OneDrive/Documents/GitHub/EDA_EIM/Estrutura.h}
 {\bkmkstart AAAAAAAAAB}
 {\bkmkend AAAAAAAAAB}
 Go to the documentation of this file.{
@@ -126,28 +126,28 @@ Go to the documentation of this file.{
 11 {\cf20 //----------------------ESTRUTURA MAQUINA ---------------------}\par
 12 {\cf17 typedef} {\cf17 struct }maquina\par
 13 \{\par
-14     {\cf18 int} maquinaNum;\par
-15     {\cf18 int} maquinaTempo;\par
-16     {\cf17 struct }maquina *Seguinte;\par
-17     {\cf17 struct }maquina *Anterior;\par
-18 \} maquina;\par
+14     {\cf18 int} maquinaNum; {\cf20 //}\par
+15     {\cf18 int} maquinaTempo;{\cf20 //}\par
+16     {\cf17 struct }maquina *Seguinte;{\cf20 //}\par
+17     {\cf17 struct }maquina *Anterior;{\cf20 //}\par
+18 \} maquina;{\cf20 //}\par
 19 {\cf20 //----------------------ESTRUTURA OPERACAO ---------------------}\par
 20 \par
-21 {\cf17 typedef} {\cf17 struct }operacao\par
+21 {\cf17 typedef} {\cf17 struct }operacao{\cf20 //}\par
 22 \{\par
-23     {\cf18 int} operacaoNum;\par
-24     {\cf18 int} jobNum;\par
-25     {\cf17 struct }maquina *MaquinaHead;\par
-26     {\cf17 struct }operacao *Seguinte;\par
-27     {\cf17 struct }operacao *Anterior;\par
-28 \} operacao;\par
+23     {\cf18 int} operacaoNum;{\cf20 //}\par
+24     {\cf18 int} jobNum;{\cf20 //}\par
+25     {\cf17 struct }maquina *MaquinaHead;{\cf20 //}\par
+26     {\cf17 struct }operacao *Seguinte;{\cf20 //}\par
+27     {\cf17 struct }operacao *Anterior;{\cf20 //}\par
+28 \} operacao;{\cf20 //}\par
 29 {\cf20 //----------------------ESTRUTURA JOB ---------------------}\par
 30 {\cf17 typedef} {\cf17 struct }job\par
 31 \{\par
-32     {\cf18 int} jobis;\par
-33     {\cf18 int} jobNum;\par
-34     {\cf17 struct }operacao *OperacaoHead;\par
-35     {\cf17 struct }job *Seguinte;\par
+32     {\cf18 int} jobis;{\cf20 //}\par
+33     {\cf18 int} jobNum;{\cf20 //}\par
+34     {\cf17 struct }operacao *OperacaoHead;{\cf20 //}\par
+35     {\cf17 struct }job *Seguinte;{\cf20 //}\par
 36 \} job;\par
 37 {\cf20 //----------------------FIM ESTRUTURAS---------------------}\par
 38 \par

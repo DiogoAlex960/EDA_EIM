@@ -107,138 +107,25 @@
 }
 {\comment begin body}
 \pard\plain \s2\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs28\kerning28\cgrid 
-EDA_TP2_DS/Main.c File Reference\par \pard\plain 
-{\tc\tcl2 \v EDA_TP2_DS/Main.c}
-{\xe \v EDA_TP2_DS/Main.c}
-{\bkmkstart AAAAAAAACS}
-{\bkmkend AAAAAAAACS}
-{
-\pard\plain \s18\widctlpar\fs22\cgrid {\f2 #include <stdio.h>}\par
-{\f2 #include <stdlib.h>}\par
-{\f2 #include <conio.h>}\par
-{\f2 #include "Estrutura.h"}\par
-}
+C:/Users/diogo/OneDrive/Documents/GitHub/EDA_EIM Directory Reference\par \pard\plain 
+{\tc\tcl2 \v C:/Users/diogo/OneDrive/Documents/GitHub/EDA_EIM Directory Reference}
+{\xe \v C:/Users/diogo/OneDrive/Documents/GitHub/EDA_EIM Directory Reference}
+{\bkmkstart AAAAAAAADM}
+{\bkmkend AAAAAAAADM}
 \pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Functions\par
+Files\par
 \pard\plain 
 
 {
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-void {\b MainMenu} ()\par
+file {\b Escala.c}\par
 \pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
-void {\b main} ()\par
-}
-{\pard\widctlpar\brdrb\brdrs\brdrw5\brsp20 \adjustright \par}
-\pard\plain \s3\sb240\sa60\keepn\widctlpar\adjustright \b\f1\cgrid 
-Function Documentation\par
-\pard\plain 
-{\xe \v main\:Main.c}
-{\xe \v Main.c\:main}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-void main ()}}
-\par
-{\bkmkstart AAAAAAAACT}
-{\bkmkend AAAAAAAACT}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 12 \{\par
-13    system({\cf22 "cls"});\par
-14    MainMenu();\par
-15 \}\par
-}
-}
-{\xe \v MainMenu\:Main.c}
-{\xe \v Main.c\:MainMenu}
-\pard\plain \s4\sb240\sa60\keepn\widctlpar\adjustright \b\f1\fs20\cgrid {
-{\b 
-void MainMenu ()}}
-\par
-{\bkmkstart AAAAAAAACU}
-{\bkmkend AAAAAAAACU}
-{
-\pard\plain \s61\li360\sa60\sb30\qj\widctlpar\qj\adjustright \fs20\cgrid 
-{
-\pard\plain \s41\li360\widctlpar\adjustright \shading1000\cbpat8 \f2\fs16\cgrid 18 \{\par
-19     FILE *jobFile;\par
-20     job *HeadJob = NULL;\par
-21     HeadJob = read(jobFile, HeadJob);\par
-22     {\cf18 int} Valor;\par
-23 \par
-24     {\cf19 do}\par
-25     \{\par
-26         printf({\cf22 "##----------------- Menu Principal Jobs ------------------##\\n"}\par
-27                {\cf22 "\\t\\n"}\par
-28                {\cf22 "\\t > 1 - Listar \\n"}\par
-29                {\cf22 "\\t > 2 - Inserir Job \\n"}\par
-30                {\cf22 "\\t > 3 - Remover Job \\n"}\par
-31                {\cf22 "\\t > 4 - Adicionar Operacoes\\n"}\par
-32                {\cf22 "\\t > 5 - Remover Operacoes\\n"}\par
-33                {\cf22 "\\t > 6 - Alterar Operacoes\\n"}\par
-34                {\cf22 "\\t > 7 - Minimo Tempo\\n"}\par
-35                {\cf22 "\\t > 8 - Maximo Tempo\\n"}\par
-36                {\cf22 "\\t > 9 - Media Tempo\\n"}\par
-37                {\cf22 "\\t > 10 - Escalonamento\\n"}{\cf20 //Obras}\par
-38                {\cf22 "\\t > 11 - Representacao Process\\n"}{\cf20 //Obras}\par
-39                {\cf22 "\\t\\n"}\par
-40                {\cf22 "\\n\\t > 0 - Quit\\n"}\par
-41               {\cf22 "##---------------------------------------------------------##"});\par
-42 \par
-43         Valor = Dado(0, 11);\par
-44         {\cf19 switch} (Valor)\par
-45         \{\par
-46         {\cf19 case} 1:\par
-47             ListaJobs(HeadJob);\par
-48             {\cf19 break};\par
-49         {\cf19 case} 2:\par
-50             CriarJob(HeadJob);\par
-51             {\cf19 break};\par
-52         {\cf19 case} 3:\par
-53             RemoverJob(HeadJob);\par
-54             {\cf19 break};\par
-55         {\cf19 case} 4:\par
-56             CriarOperacao(HeadJob);\par
-57             {\cf19 break};\par
-58         {\cf19 case} 5:\par
-59             RemoverOperacao(HeadJob);\par
-60             {\cf19 break};\par
-61         {\cf19 case} 6:\par
-62              AlterarOperacao(HeadJob);\par
-63             {\cf19 break};\par
-64         {\cf19 case} 7:\par
-65               TempoMinimo(SelecionaJob(HeadJob));\par
-66             {\cf19 break};\par
-67         {\cf19 case} 8:\par
-68               TempoMaximo(SelecionaJob(HeadJob));\par
-69             {\cf19 break};\par
-70         {\cf19 case} 9:\par
-71               TempoMedio(SelecionaJob(HeadJob));\par
-72             {\cf19 break};\par
-73         {\cf19 case} 10:\par
-74            {\cf20 // Escalonamento(HeadJob);}\par
-75             {\cf19 break};\par
-76         {\cf19 case} 11:\par
-77             {\cf20 // Representa(HeadJob);}\par
-78             {\cf19 break};\par
-79         {\cf19 case} 0:\par
-80             {\cf19 break};\par
-81         {\cf19 default}:\par
-82             printf({\cf22 "\\n\\t//Valor Invalido//\\n\\n"});\par
-83             MainMenu();\par
-84             {\cf19 break};\par
-85         \}\par
-86         {\cf19 if} (Valor != 0 && Valor != 6)\par
-87         \{\par
-88             printf({\cf22 "\\nEnter para Voltar Atras..."});\par
-89             getch();\par
-90             system({\cf22 "cls"});\par
-91         \}\par
-92 \par
-93     \} {\cf19 while} (Valor != 0);\par
-94     write(jobFile, HeadJob);\par
-95     _Exit(0);\par
-96 \}\par
-}
+file {\b Escala.h}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+file {\b Estrutura.h}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+file {\b Funcoes.c}\par
+\pard\plain \s120\fi-360\li360\widctlpar\jclisttab\tx360{\*\pn \pnlvlbody\ilvl0\ls1\pnrnot0\pndec }\ls1\adjustright \fs20\cgrid 
+file {\b main.c}\par
 }
 }
